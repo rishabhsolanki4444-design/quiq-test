@@ -1,0 +1,116 @@
+{
+    "header": {
+        "products": "Products",
+        "about": "About",
+        "integratedTest": "Integrated Test",
+        "investments": "Investments",
+        "contact": "Contact",
+        "shopNow": "Shop Now",
+        "cart": "Cart"
+    },
+    "hero": {
+        "slide1Lines": "Imagine|Testing for Cancer|With a Single Drop of Blood|At Home|In 5 Minutes",
+        "slide2Title": "Presenting QUIQ™",
+        "slide2Line1": "Self-testing kits",
+        "slide2Line2": "Range of conditions. One drop of blood.",
+        "slide2Line3": "Built on world-class medical research",
+        "slide2Line4": "Trusted by health authorities in India and Abroad",
+        "cta1": "Test Yourself"
+    },
+    "problemSolution": {
+        "problemSubtitle": "The Problem",
+        "problemTitle": "Diagnostics in India is a Luxury",
+        "solutionSubtitle": "Our Solution",
+        "solutionTitle": "Democratising Healthcare",
+        "speed": "Speed",
+        "accessibility": "Accessibility",
+        "affordability": "Affordability",
+        "speedProblem": "It takes 2–3 days just to test and diagnose Malaria in Tier 2 cities.",
+        "accessProblem": "In parts of India, people have to travel 2 hours just to get a simple test done.",
+        "affordProblem": "Simple lab tests cost over ₹500 — making routine screening a luxury for most.",
+        "speedSolution": "Quiq delivers accurate results in under 10 minutes — faster than boiling water.",
+        "accessSolution": "No lab visits, no appointments. Test yourself anywhere — your home, office, or village.",
+        "affordSolution": "Lab-grade diagnostics at a fraction of the cost. Healthcare that every Indian can afford.",
+        "privacy": "Privacy",
+        "privacyProblem": "Visiting clinics requires answering uncomfortable questions and risking your medical confidentiality.",
+        "privacySolution": "100% private. Test discreetly at home, knowing your health data is for your eyes only.",
+        "quote": "Quiq™ aims to provide affordable and high quality self testing diagnostics to everyone in India"
+    },
+    "storyCards": {
+        "card1Title": "Phir Se..?",
+        "card1Text": "Doctor: “Suresh ji, ye kuch tests karwane honge…”\n\nPapa (worried): “Matlab ab fir lab jaana padega…”",
+        "card2Title": "A confident answer",
+        "card2Text": "Daughter: “All these tests are available ✓”\n\nPapa: “So should I wait for 2 days?”\n\nDaughter: “Why? You can do it in 15 minutes using Quiq”\n\nAb lab / hospital ko ghar le aaye.",
+        "card3Title": "“Ab ghar baithe karo”",
+        "card3Text": "Instant results in 15 minutes.\n\nTake control of your health accurately, anytime.",
+        "card4Title": "The Quiq promise",
+        "card4Text": "Ab Guess mat karo, Test karo\n\nNo Appointment. No Queue.\n\nAb ghar baithe — instant results.",
+        "perTest": "per test"
+    },
+    "testWorking": {
+        "subtitle": "How It Works",
+        "title": "See It In Action",
+        "step1Title": "Add a Drop of Blood",
+        "step1Desc": "Prick your finger with the lancet and place a small drop of blood on the test strip.",
+        "step2Title": "Blood Travels Forward",
+        "step2Desc": "The blood naturally flows along the test strip through capillary action, picking up special markers as it moves.",
+        "step3Title": "Analyte Gets Captured",
+        "step3Desc": "As the blood moves through the strip, coloured lines appear — showing whether a health marker is detected.",
+        "step4Title": "Read Your Results",
+        "step4Desc": "Match the line on the test strip with the shade card to understand your result — it's that simple."
+    },
+    "testRange": {
+        "subtitle": "Our Tests",
+        "title": "Test Range",
+        "viewTest": "View Test →",
+        "viewAll": "View All Tests",
+        "perTest": "per test"
+    },
+    "markers": {
+        "subtitle": "What We Test",
+        "title": "Test Categories",
+        "vitamins": "Vitamins",
+        "hormones": "Hormones",
+        "metabolic": "Metabolic",
+        "immunity": "Immunity",
+        "heartHealth": "Heart Health",
+        "bloodWork": "Blood Work"
+    },
+    "certifications": {
+        "subtitle": "Certified & Trusted",
+        "title": "Globally Recognized Standards",
+        "ivd": "IVD Certified",
+        "ivdDesc": "In-Vitro Diagnostic Device certified for medical self-testing",
+        "ce": "CE Marked",
+        "ceDesc": "European conformity marking for safety and performance standards",
+        "iso": "ISO 13485",
+        "isoDesc": "Quality management system for medical devices"
+    },
+    "testimonials": {
+        "subtitle": "Testimonials",
+        "title": "Trusted by Doctors & Patients",
+        "doctor": "Doctor"
+    },
+    "penTestCta": {
+        "subtitle": "Self-Test",
+        "title": "Integrated Pen Test",
+        "desc": "Our most advanced testing device. A single pen-style device that simplifies sample collection and delivers results faster than ever.",
+        "cta": "Learn More",
+        "scrollHint": "Scroll to explore"
+    },
+    "newsletter": {
+        "subtitle": "Stay Updated",
+        "title": "Join Our Newsletter",
+        "desc": "Get the latest on new tests, health tips, and exclusive offers.",
+        "placeholder": "Enter your email",
+        "subscribe": "Subscribe",
+        "subscribed": "Subscribed!",
+        "noSpam": "No spam. Unsubscribe anytime."
+    },
+    "footer": {
+        "company": "Company",
+        "support": "Support",
+        "legal": "Legal",
+        "rights": "All rights reserved."
+    }
+}
