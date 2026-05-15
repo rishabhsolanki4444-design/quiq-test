@@ -56,10 +56,7 @@ const whyQuiq = [
   { icon: Lightbulb, title: 'Knowledge is Power', description: 'Empowering individuals to make informed decisions about their own health.' },
 ]
 
-export const metadata = {
-  title: "About QUIQ | Affordable Home Diagnostics India",
-  description: "QUIQ by Santa Clara Wellness makes CE and IVD certified home diagnostic kits under Rs 99. Based in Mumbai. Validated by doctors. No prescription needed.",
-}
+
 
 export default function AboutPage() {
   return (
