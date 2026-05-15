@@ -21,6 +21,9 @@ export interface Product {
     howToTest: string[]
     howToReadResults: string[]
     reviews: Review[]
+    seoTitle?: string
+    seoDescription?: string
+    seoH1?: string
 }
 
 export interface Review {
@@ -42,6 +45,9 @@ const vitaminD: Product = {
     price: 99, originalPrice: 249, currency: '₹', category: 'Wellness & Lifestyle',
     image: '/product/vitamin-d/1.png', imageFolder: '/product/vitamin-d',
     rating: 4.8, reviewCount: 342, inStock: true, availableNow: true,
+    seoTitle: 'Vitamin D Home Test Kit India Rs 99 | QUIQ',
+    seoDescription: 'Check your Vitamin D levels at home in 10 minutes. Clinically accurate kit at Rs 99. CE and IVD certified. No prescription needed. Free delivery across India.',
+    seoH1: 'Vitamin D Home Self-Test Kit. Check Your Levels in 10 Minutes.',
     features: ['Results in 10 min', 'Finger-prick', 'CE & IVD certified', 'Shade card'],
     description: 'Vitamin D is essential for bone health, immune function, and muscle strength. Deficiency is extremely common in India due to indoor lifestyles. Our test detects 25-hydroxy Vitamin D levels via a lateral flow immunoassay from a finger-prick sample.',
     whoIsItFor: ['Fatigue, bone pain, or frequent illness', 'Office workers with limited sun exposure', 'Elderly at risk of bone issues', 'Vegetarians/vegans', 'Regular monitoring'],
@@ -60,6 +66,9 @@ const vitaminB12: Product = {
     price: 89, originalPrice: 229, currency: '₹', category: 'Wellness & Lifestyle',
     image: 'product/vitamin-b12/1.webp', imageFolder: '/product/vitamin-b12',
     rating: 4.7, reviewCount: 189, inStock: true, availableNow: false, launchDate: '1st July 2026',
+    seoTitle: 'Vitamin B12 Home Test Kit India Rs 89 | QUIQ',
+    seoDescription: 'Check your Vitamin B12 levels at home in 10 minutes. Rs 89. CE and IVD certified. No prescription needed. Especially important for vegetarians. Free delivery.',
+    seoH1: 'Vitamin B12 Home Self-Test Kit. Check Your Levels in 10 Minutes.',
     features: ['Results in 10 min', 'B12 detection', 'CE & IVD certified', 'Finger-prick'],
     description: 'Vitamin B12 is vital for nerve function, red blood cell formation, and DNA synthesis. Over 80% of Indian vegetarians are B12 deficient. Our test detects deficiency early so you can act.',
     whoIsItFor: ['Vegetarians and vegans', 'Elderly (absorption decreases with age)', 'Digestive issues or celiac disease', 'Numbness, tingling, brain fog', 'On metformin or acid-reducers'],
@@ -78,6 +87,9 @@ const ferritin: Product = {
     price: 89, originalPrice: 199, currency: '₹', category: 'Wellness & Lifestyle',
     image: '/product/iron-deficiency/1.webp', imageFolder: '/product/iron-deficiency',
     rating: 4.7, reviewCount: 218, inStock: true, availableNow: true,
+    seoTitle: 'Iron Deficiency Ferritin Test Kit India | QUIQ',
+    seoDescription: 'Detect iron deficiency at home in 10 minutes. Ferritin test kit at Rs 89. CE and IVD certified. No prescription needed. Free delivery across India.',
+    seoH1: 'Iron Deficiency Ferritin Home Test Kit. Detect Anaemia Early.',
     features: ['Results in 10 min', 'Ferritin detection', 'CE & IVD certified', 'No lab visit'],
     description: 'Iron deficiency affects over 50% of Indian women. Our test detects Ferritin — the protein that stores iron. Low Ferritin is the earliest indicator, even before anemia develops.',
     whoIsItFor: ['Women with heavy periods', 'Pregnant or breastfeeding women', 'Chronic fatigue or weakness', 'Vegetarians/vegans', 'Athletes'],
@@ -96,6 +108,9 @@ const tsh: Product = {
     price: 79, originalPrice: 199, currency: '₹', category: 'Wellness & Lifestyle',
     image: '/product/tsh/1.webp', imageFolder: '/product/tsh',
     rating: 4.9, reviewCount: 456, inStock: true, availableNow: true,
+    seoTitle: 'TSH Thyroid Home Test Kit India Rs 79 | QUIQ',
+    seoDescription: 'Test your thyroid TSH levels at home in 10 minutes. Clinically accurate. Rs 79. CE and IVD certified. No lab visit needed. Free delivery across India.',
+    seoH1: 'TSH Thyroid Home Self-Test Kit. Results in 10 Minutes.',
     features: ['Results in 10 min', 'TSH detection', 'CE & IVD certified', 'Clinically accurate'],
     description: 'TSH is the key marker for thyroid function. Abnormal levels indicate hypo/hyperthyroidism — extremely common in India. Our test uses lateral flow technology from a finger-prick sample.',
     whoIsItFor: ['Unexplained weight changes', 'Fatigue, hair loss, mood changes', 'Women planning pregnancy', 'On thyroid medication', 'Family history of thyroid disorders'],
@@ -251,6 +266,9 @@ const crp: Product = {
     price: 89, originalPrice: 199, currency: '₹', category: 'Cancer Markers',
     image: '/product/crp/1.webp', imageFolder: '/product/crp',
     rating: 4.6, reviewCount: 123, inStock: true, availableNow: true,
+    seoTitle: 'CRP Inflammation Home Test Kit India | QUIQ',
+    seoDescription: 'Test CRP inflammation markers at home in 10 minutes. Rs 89. CE and IVD certified. No prescription needed. Free delivery across India.',
+    seoH1: 'CRP Inflammation Home Test Kit. Results in 10 Minutes.',
     features: ['Results in 10 min', 'CRP marker', 'CE & IVD certified', 'Inflammation screening'],
     description: 'C-Reactive Protein (CRP) is produced by the liver in response to inflammation. Elevated CRP can indicate infections, autoimmune diseases, or cancer. A key marker for overall health assessment.',
     whoIsItFor: ['Unexplained fatigue', 'Joint pain or swelling', 'Monitoring autoimmune conditions', 'Post-surgery recovery', 'Heart disease risk assessment'],

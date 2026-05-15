@@ -10,6 +10,11 @@ import { products, categories } from '@/lib/products'
 import { useCart } from '@/lib/cart'
 import { useState } from 'react'
 
+export const metadata = {
+  title: "Home Blood Test Kits India Under Rs 99 | QUIQ",
+  description: "Browse all QUIQ home blood test kits. Vitamin D, Thyroid, Iron, B12, CRP and more. All under Rs 99. CE and IVD certified. Free delivery across India.",
+}
+
 export default function ProductsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const { addToCart } = useCart()
@@ -32,7 +37,7 @@ export default function ProductsPage() {
             >
               <p className="text-xs text-white/30 tracking-[0.3em] uppercase mb-4">Our products</p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold gradient-text mb-4">
-                Self-Test Kits
+                Home Blood Test Kits India. All Tests Under Rs 99.
               </h1>
               <p className="text-base text-white/40 max-w-xl mx-auto">
                 CE & IVD certified diagnostics. Results in minutes. All under ₹99.

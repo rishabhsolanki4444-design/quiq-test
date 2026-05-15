@@ -6,8 +6,8 @@ import PostCards from "@/components/blog/PostCards"
 import Script from "next/script"
 
 export const metadata = {
-  title: "Blog • QUIQ",
-  description: "Health insights, wellness tips, and the latest updates from the QUIQ team. Discover how to take control of your health with at-home diagnostics.",
+  title: "Home Health Testing Blog | QUIQ",
+  description: "Expert guides on home blood testing in India. Vitamin D, thyroid, iron deficiency and more. Learn symptoms, testing methods and what your results mean.",
 }
 
 export default function BlogPage() {
@@ -29,7 +29,7 @@ export default function BlogPage() {
           {/* Hero Section */}
           <div className="text-center mb-20 pt-16">
             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent mb-6 leading-[1.1] pb-2">
-              Blog
+              Home Health Testing. Tips, Guides and News from QUIQ.
             </h1>
             <p className="text-xl md:text-2xl text-white/70 max-w-3xl mx-auto leading-relaxed">
               Health insights, wellness tips, and the latest updates from the QUIQ team. 

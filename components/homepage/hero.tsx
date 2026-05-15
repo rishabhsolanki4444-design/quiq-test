@@ -125,6 +125,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-black">
+      <h1 className="sr-only">Affordable Home Self-Test Kits India. Results in 10 Minutes.</h1>
+      
       {/* ═══════════════ SLIDE 1 — One line at a time ══════════════════ */}
       <AnimatePresence>
         {slide === 0 && (
@@ -150,7 +152,7 @@ export function Hero() {
             {/* Single active line */}
             <div className="relative z-10 w-full max-w-4xl mx-auto px-4 text-center">
               <AnimatePresence mode="wait">
-                <motion.h1
+                <motion.div
                   key={activeLineIdx}
                   className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.15] text-white drop-shadow-lg"
                   initial={{ opacity: 0, y: 30 }}
@@ -163,7 +165,7 @@ export function Hero() {
                   transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
                 >
                   {slide1Lines[activeLineIdx]}
-                </motion.h1>
+                </motion.div>
               </AnimatePresence>
             </div>
           </motion.div>

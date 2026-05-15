@@ -15,6 +15,11 @@ import { StoryCards } from '@/components/homepage/story-cards'
 import { ProductShowcase } from '@/components/homepage/product-showcase'
 import { BrandMarquee } from '@/components/homepage/brand-marquee'
 
+export const metadata = {
+  title: "Affordable Home Self-Test Kits India | QUIQ",
+  description: "QUIQ offers affordable home blood test kits under Rs 99. Check Vitamin D, Thyroid, Iron and more at home. Results in 10 minutes. Free delivery across India.",
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">

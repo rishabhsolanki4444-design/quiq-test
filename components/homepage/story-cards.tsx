@@ -133,7 +133,7 @@ export function StoryCards() {
             </div>
 
             {/* Mobile Horizontal Snap Layout (No vertical hijack) */}
-            <div className="md:hidden w-full py-20 px-4">
+            <div className="md:hidden w-full py-20 px-4" aria-hidden="true">
                 <style dangerouslySetInnerHTML={{
                     __html: `
                     .hide-scroll::-webkit-scrollbar { display: none; }

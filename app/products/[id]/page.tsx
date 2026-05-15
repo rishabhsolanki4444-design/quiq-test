@@ -93,6 +93,16 @@ const paymentIcons = [
   { name: 'CRED', src: '/credpay.svg' },
 ]
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const product = getProduct(id)
+  if (!product) return { title: 'Product Not Found | QUIQ' }
+  return {
+    title: product.seoTitle || `${product.name} | QUIQ`,
+    description: product.seoDescription || product.shortDescription,
+  }
+}
+
 export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
   const product = getProduct(id)
@@ -136,7 +146,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             {/* Product Info */}
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="flex flex-col">
               <span className="text-[11px] text-white/30 uppercase tracking-wider mb-2">{product.category}</span>
-              <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">{product.name}</h1>
+              <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">{product.seoH1 || product.name}</h1>
 
               {/* Rating */}
               <div className="flex items-center gap-2 mb-5">
