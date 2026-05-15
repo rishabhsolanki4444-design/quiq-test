@@ -48,7 +48,7 @@ const PostCards = ({ posts, showPagination = true, postsPerPage = 9, showViewAll
                   : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
               }`}
             >
-              {category} {category === 'Product' ? 's' : ''}
+              {category}{category === 'Product' ? 's' : ''}
             </button>
           ))}
         </div>
