@@ -183,7 +183,10 @@ export function Header() {
                 className="text-sm text-white/70 hover:text-white py-3 px-4 rounded-xl hover:bg-white/[0.06] transition-all flex items-center justify-between"
                 onClick={() => setIsOpen(false)}
               >
-                {t('header.cart')}
+                <div className="flex items-center gap-3">
+                  <ShoppingBag className="w-4 h-4" />
+                  <span>{t('header.cart')}</span>
+                </div>
                 {totalItems > 0 && (
                   <span className="w-5 h-5 bg-white text-black text-[11px] font-bold rounded-full flex items-center justify-center">
                     {totalItems}
