@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'QUIQ - Affordable Self-Test Diagnostics | Know Your Health',
-  description: 'Premium at-home self-test kits under ₹99. CE & IVD certified. Results in minutes. Democratising healthcare in India.',
+  description: 'QUIQ offers affordable home blood test kits under Rs 99. Check Vitamin D, Thyroid, Iron and more at home. Results in 10 minutes. Free delivery across India. No prescription needed.',
   generator: 'v0.app',
   icons: {
     icon: [

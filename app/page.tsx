@@ -17,12 +17,73 @@ import { BrandMarquee } from '@/components/homepage/brand-marquee'
 
 export const metadata = {
   title: "Affordable Home Self-Test Kits India | QUIQ",
-  description: "QUIQ offers affordable home blood test kits under Rs 99. Check Vitamin D, Thyroid, Iron and more at home. Results in 10 minutes. Free delivery across India.",
+  description: "QUIQ offers affordable home blood test kits under Rs 99. Check Vitamin D, Thyroid, Iron and more at home. Results in 10 minutes. No prescription needed.",
+  alternates: {
+    canonical: "https://quiq-main.vercel.app",
+  },
+  openGraph: {
+    title: "Affordable Home Self-Test Kits India | QUIQ",
+    description: "QUIQ offers affordable home blood test kits under Rs 99. Check Vitamin D, Thyroid, Iron and more at home. Results in 10 minutes. No prescription needed.",
+    url: "https://quiq-main.vercel.app",
+    type: "website",
+    images: [{ url: "https://quiq-main.vercel.app/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@quiqhealth",
+    title: "Affordable Home Self-Test Kits India | QUIQ",
+    description: "QUIQ offers affordable home blood test kits under Rs 99. Check Vitamin D, Thyroid, Iron and more at home. Results in 10 minutes. No prescription needed.",
+    images: ["https://quiq-main.vercel.app/og-image.png"],
+  },
 }
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "QUIQ",
+        "legalName": "Santa Clara Wellness",
+        "url": "https://quiq-main.vercel.app",
+        "logo": "https://quiq-main.vercel.app/quiq-logo.png",
+        "foundingLocation": "Mumbai, India",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "info@quiq.health"
+        },
+        "sameAs": [
+          "https://www.amazon.in",
+          "https://blinkit.com",
+          "https://www.1mg.com"
+        ]
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "QUIQ",
+        "url": "https://quiq-main.vercel.app",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://quiq-main.vercel.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "QUIQ",
+        "description": "Affordable CE and IVD certified home diagnostic test kits under Rs 99.",
+        "url": "https://quiq-main.vercel.app",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "medicalSpecialty": "Diagnostic"
+      }) }} />
       <Header />
       <main>
         <Hero />

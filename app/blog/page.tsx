@@ -7,7 +7,24 @@ import Script from "next/script"
 
 export const metadata = {
   title: "Home Health Testing Blog | QUIQ",
-  description: "Expert guides on home blood testing in India. Vitamin D, thyroid, iron deficiency and more. Learn symptoms, testing methods and what your results mean.",
+  description: "Expert guides on home blood testing in India. Vitamin D, thyroid, iron deficiency and more.",
+  alternates: {
+    canonical: "https://quiq-main.vercel.app/blog",
+  },
+  openGraph: {
+    title: "Home Health Testing Blog | QUIQ",
+    description: "Expert guides on home blood testing in India. Vitamin D, thyroid, iron deficiency and more.",
+    url: "https://quiq-main.vercel.app/blog",
+    type: "website",
+    images: [{ url: "https://quiq-main.vercel.app/og-image.png" }],
+  },
+  twitter: {
+    card: "summary_large_image" as const,
+    site: "@quiqhealth",
+    title: "Home Health Testing Blog | QUIQ",
+    description: "Expert guides on home blood testing in India. Vitamin D, thyroid, iron deficiency and more.",
+    images: ["https://quiq-main.vercel.app/og-image.png"],
+  },
 }
 
 export default function BlogPage() {

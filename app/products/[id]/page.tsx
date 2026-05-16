@@ -116,8 +116,102 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
 
   const relatedProducts = getRelatedProducts(product.id)
 
+  let schemaObj = null;
+  if (product.slug === 'vitamin-d') {
+    schemaObj = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "QUIQ Vitamin D Self Test Kit",
+      "description": "Check Vitamin D levels at home in 10 minutes. CE and IVD certified. Results from a single finger-prick blood sample.",
+      "brand": { "@type": "Brand", "name": "QUIQ" },
+      "sku": "QUIQ-VITD-001",
+      "offers": {
+        "@type": "Offer",
+        "price": "99",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/ComingSoon",
+        "url": "https://quiq-main.vercel.app/products/vitamin-d",
+        "seller": { "@type": "Organization", "name": "QUIQ" }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "342"
+      }
+    };
+  } else if (product.slug === 'tsh') {
+    schemaObj = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "QUIQ TSH Thyroid Self Test Kit",
+      "description": "Test TSH thyroid levels at home in 10 minutes. CE and IVD certified.",
+      "brand": { "@type": "Brand", "name": "QUIQ" },
+      "sku": "QUIQ-TSH-001",
+      "offers": {
+        "@type": "Offer",
+        "price": "79",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/ComingSoon",
+        "url": "https://quiq-main.vercel.app/products/tsh",
+        "seller": { "@type": "Organization", "name": "QUIQ" }
+      }
+    };
+  } else if (product.slug === 'iron-deficiency') {
+    schemaObj = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "QUIQ Iron Deficiency Ferritin Test Kit",
+      "description": "Detect iron deficiency at home in 10 minutes. CE and IVD certified.",
+      "brand": { "@type": "Brand", "name": "QUIQ" },
+      "sku": "QUIQ-IRON-001",
+      "offers": {
+        "@type": "Offer",
+        "price": "89",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/ComingSoon",
+        "url": "https://quiq-main.vercel.app/products/iron-deficiency",
+        "seller": { "@type": "Organization", "name": "QUIQ" }
+      }
+    };
+  } else if (product.slug === 'vitamin-b12') {
+    schemaObj = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "QUIQ Vitamin B12 Self Test Kit",
+      "description": "Check Vitamin B12 levels at home in 10 minutes. CE and IVD certified.",
+      "brand": { "@type": "Brand", "name": "QUIQ" },
+      "sku": "QUIQ-B12-001",
+      "offers": {
+        "@type": "Offer",
+        "price": "89",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/ComingSoon",
+        "url": "https://quiq-main.vercel.app/products/vitamin-b12",
+        "seller": { "@type": "Organization", "name": "QUIQ" }
+      }
+    };
+  } else if (product.slug === 'crp') {
+    schemaObj = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "QUIQ CRP Inflammation Self Test Kit",
+      "description": "Test CRP inflammation markers at home in 10 minutes. CE and IVD certified.",
+      "brand": { "@type": "Brand", "name": "QUIQ" },
+      "sku": "QUIQ-CRP-001",
+      "offers": {
+        "@type": "Offer",
+        "price": "89",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/ComingSoon",
+        "url": "https://quiq-main.vercel.app/products/crp",
+        "seller": { "@type": "Organization", "name": "QUIQ" }
+      }
+    };
+  }
+
   return (
     <div className="min-h-screen bg-black text-white">
+      {schemaObj && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaObj) }} />}
       <Header />
       <main className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
