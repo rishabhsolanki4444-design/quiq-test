@@ -142,7 +142,8 @@ export function Hero() {
             <div className="absolute inset-0 z-0">
               <Image
                 src="/hero.webp"
-                alt="Hero Background"
+                alt="home blood test kit india self testing diagnostics"
+                title="home blood test kit india self testing diagnostics"
                 fill
                 priority
                 className="object-cover opacity-5"

@@ -61,7 +61,8 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0">
           <Image
             src="/quiq-logo.png"
-            alt="QUIQ Logo"
+            alt="QUIQ affordable home self-test kits india"
+            title="QUIQ affordable home self-test kits india"
             width={32}
             height={32}
             className="h-7 w-auto transition-transform group-hover:scale-110"

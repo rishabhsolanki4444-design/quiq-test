@@ -11,6 +11,15 @@ const brands = [
     { name: 'Amazon', logo: '/brands/Amazon.png' },
 ]
 
+const brandAltText: Record<string, string> = {
+    'Blinkit': 'buy QUIQ test kits on Blinkit',
+    'Zepto': 'buy QUIQ test kits on Zepto',
+    'PharmEasy': 'buy QUIQ test kits on PharmEasy',
+    'Tata 1mg': 'buy QUIQ test kits on Tata 1mg',
+    'Amazon': 'buy QUIQ test kits on Amazon India',
+    'Flipkart': 'buy QUIQ test kits on Flipkart',
+}
+
 export function BrandMarquee() {
     // Duplicate brands for seamless infinite scroll
     const allBrands = [...brands, ...brands, ...brands, ...brands]
@@ -34,23 +43,29 @@ export function BrandMarquee() {
                 <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
                 <div className="flex animate-marquee">
-                    {allBrands.map((brand, i) => (
-                        <div
-                            key={`${brand.name}-${i}`}
-                            className="flex-shrink-0 mx-6 sm:mx-10 flex items-center justify-center"
-                            style={{ minWidth: '140px' }}
-                        >
-                            <div className="flex items-center justify-center h-14 sm:h-16 px-6 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] transition-all duration-300 group">
-                                <Image
-                                    src={brand.logo}
-                                    alt={brand.name}
-                                    width={120}
-                                    height={40}
-                                    className="h-7 sm:h-8 w-auto object-contain opacity-50 group-hover:opacity-80 transition-opacity duration-300 brightness-0 invert"
-                                />
+                    {allBrands.map((brand, i) => {
+                        const setIndex = Math.floor(i / brands.length)
+                        const isFirstSet = setIndex === 0
+                        return (
+                            <div
+                                key={`${brand.name}-${i}`}
+                                className="flex-shrink-0 mx-6 sm:mx-10 flex items-center justify-center"
+                                style={{ minWidth: '140px' }}
+                                {...(!isFirstSet ? { 'aria-hidden': true as any } : {})}
+                            >
+                                <div className="flex items-center justify-center h-14 sm:h-16 px-6 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] transition-all duration-300 group">
+                                    <Image
+                                        src={brand.logo}
+                                        alt={isFirstSet ? (brandAltText[brand.name] || brand.name) : ''}
+                                        title={brandAltText[brand.name] || brand.name}
+                                        width={120}
+                                        height={40}
+                                        className="h-7 sm:h-8 w-auto object-contain opacity-50 group-hover:opacity-80 transition-opacity duration-300 brightness-0 invert"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
 

@@ -50,7 +50,8 @@ export function Footer() {
             <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent rounded-3xl blur-2xl" />
             <Image
               src="/quiq-logo.png"
-              alt="QUIQ"
+              alt="QUIQ affordable home self-test kits india"
+              title="QUIQ affordable home self-test kits india"
               width={200}
               height={200}
               className="w-48 sm:w-64 h-auto relative z-10 opacity-80"
