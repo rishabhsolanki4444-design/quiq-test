@@ -46,7 +46,7 @@ export function BrandMarquee() {
                                 <div className="flex items-center justify-center h-14 sm:h-16 px-6 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] transition-all duration-300 group">
                                     <Image
                                         src={brand.logo}
-                                        alt={isFirstSet ? brand.alt : ''}
+                                        alt={brand.alt}
                                         title={brand.alt}
                                         width={120}
                                         height={40}
