@@ -3,22 +3,13 @@
 import Image from 'next/image'
 
 const brands = [
-    { name: 'Blinkit', logo: '/brands/blinkit.png' },
-    { name: 'Zepto', logo: '/brands/zepto.png' },
-    { name: 'PharmEasy', logo: '/brands/PharmEasy.png' },
-    { name: 'Tata 1mg', logo: '/brands/Tata_1mg.svg' },
-    { name: 'Flipkart', logo: '/brands/Flipkart.svg' },
-    { name: 'Amazon', logo: '/brands/Amazon.png' },
+    { name: 'Blinkit', logo: '/brands/blinkit.png', alt: 'buy QUIQ test kits on Blinkit' },
+    { name: 'Zepto', logo: '/brands/zepto.png', alt: 'buy QUIQ test kits on Zepto' },
+    { name: 'PharmEasy', logo: '/brands/PharmEasy.png', alt: 'buy QUIQ test kits on PharmEasy' },
+    { name: 'Tata 1mg', logo: '/brands/Tata_1mg.svg', alt: 'buy QUIQ test kits on Tata 1mg' },
+    { name: 'Flipkart', logo: '/brands/Flipkart.svg', alt: 'buy QUIQ test kits on Flipkart' },
+    { name: 'Amazon', logo: '/brands/Amazon.png', alt: 'buy QUIQ test kits on Amazon India' },
 ]
-
-const brandAltText: Record<string, string> = {
-    'Blinkit': 'buy QUIQ test kits on Blinkit',
-    'Zepto': 'buy QUIQ test kits on Zepto',
-    'PharmEasy': 'buy QUIQ test kits on PharmEasy',
-    'Tata 1mg': 'buy QUIQ test kits on Tata 1mg',
-    'Amazon': 'buy QUIQ test kits on Amazon India',
-    'Flipkart': 'buy QUIQ test kits on Flipkart',
-}
 
 export function BrandMarquee() {
     // Duplicate brands for seamless infinite scroll
@@ -44,8 +35,7 @@ export function BrandMarquee() {
 
                 <div className="flex animate-marquee">
                     {allBrands.map((brand, i) => {
-                        const setIndex = Math.floor(i / brands.length)
-                        const isFirstSet = setIndex === 0
+                        const isFirstSet = i < brands.length
                         return (
                             <div
                                 key={`${brand.name}-${i}`}
@@ -56,8 +46,8 @@ export function BrandMarquee() {
                                 <div className="flex items-center justify-center h-14 sm:h-16 px-6 py-3 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] transition-all duration-300 group">
                                     <Image
                                         src={brand.logo}
-                                        alt={isFirstSet ? (brandAltText[brand.name] || brand.name) : ''}
-                                        title={brandAltText[brand.name] || brand.name}
+                                        alt={isFirstSet ? brand.alt : ''}
+                                        title={brand.alt}
                                         width={120}
                                         height={40}
                                         className="h-7 sm:h-8 w-auto object-contain opacity-50 group-hover:opacity-80 transition-opacity duration-300 brightness-0 invert"
