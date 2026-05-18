@@ -9,6 +9,26 @@ const nextConfig = {
     unoptimized: true,
   },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        missing: [
+          {
+            type: 'header',
+            key: 'host',
+            value: 'quiq-main.vercel.app',
+          },
+        ],
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 const withMDX = createMDX({
