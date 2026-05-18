@@ -45,6 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="k1UqLylvT35Y3BK" />
+      </head>
       <body className="font-sans antialiased">
         <CartProvider>
           <LanguageProvider>
