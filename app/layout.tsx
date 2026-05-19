@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/lib/cart'
 import { LanguageProvider } from '@/lib/i18n/context'
+import Script from 'next/script'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -55,6 +56,7 @@ export default function RootLayout({
           </LanguageProvider>
         </CartProvider>
         <Analytics />
+        <Script src="/botpress.js" strategy="afterInteractive" />
       </body>
     </html>
   )
